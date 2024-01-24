@@ -1,11 +1,8 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- * Author:  n.m.borisova
- * Created: Dec 19, 2023
- */
+INSERT INTO users(username, password, is_active) 
+VALUES ('TE55', 'NTI5MFQ=', 1),
+       ('Niki', 'NTI5ME4=', 1)
 
-INSERT INTO `users`(`username`, `password`, `is_active`) VALUES ('user1','cGFzc3dvcmQxMjM0NTY=', 1);
+INSERT INTO cow(name, weight, pictureName) 
+VALUES('Milka', 500, "Milka.jpg"),
+      ('Mooshroom', 400, "Mooshroom.jpg"),
+      ('Mila', 350, "Mila.jpg")
