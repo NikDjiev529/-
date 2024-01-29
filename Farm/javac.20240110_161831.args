@@ -1,0 +1,18 @@
+-d
+"\\\\dc02\\Students_Redirect\\smgCCFE\\Documents\\Nikola 10d_Program_Java\\Farm\\build\\classes"
+-classpath
+"\\\\dc02\\Students_Redirect\\smgCCFE\\Documents\\Nikola 10d_Program_Java\\Farm\\build\\classes;\\\\dc02\\Students_Redirect\\smgCCFE\\Documents\\Nikola 10d_Program_Java\\Farm\\lib\\DBJDBC\\mariadb-java-client-3.2.0.jar"
+-sourcepath
+"\\\\dc02\\Students_Redirect\\smgCCFE\\Documents\\Nikola 10d_Program_Java\\Farm\\build\\empty"
+-target
+16
+-encoding
+UTF-8
+-g
+-processorpath
+"\\\\dc02\\Students_Redirect\\smgCCFE\\Documents\\Nikola 10d_Program_Java\\Farm\\lib\\DBJDBC\\mariadb-java-client-3.2.0.jar;\\\\dc02\\Students_Redirect\\smgCCFE\\Documents\\Nikola 10d_Program_Java\\Farm\\build\\empty"
+-s
+"\\\\dc02\\Students_Redirect\\smgCCFE\\Documents\\Nikola 10d_Program_Java\\Farm\\build\\generated-sources\\ap-source-output"
+-source
+16
+"\\\\dc02\\Students_Redirect\\smgCCFE\\Documents\\Nikola 10d_Program_Java\\Farm\\src\\bg\\smg\\farm\\services\\UserService.java"
