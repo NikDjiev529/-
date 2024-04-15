@@ -13,10 +13,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author n.m.borisova
- */
 public class LoginForm extends javax.swing.JFrame {
 
     UserServiceI userService;
