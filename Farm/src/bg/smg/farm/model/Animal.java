@@ -5,9 +5,6 @@
  */
 package bg.smg.farm.model;
 
-import java.io.File;
-import java.util.logging.Logger;
-
 public class Animal {
     private String name;
     private int weight;

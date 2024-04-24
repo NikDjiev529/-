@@ -3,11 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Програмиране_Никола/Farm/src/bg/smg/farm/frames/MainFrame.java</file>
-            <file>file:/D:/Програмиране_Никола/Farm/src/bg/smg/farm/services/AnimalService.java</file>
-            <file>file:/D:/Програмиране_Никола/Farm/src/bg/smg/farm/frames/LoginForm.java</file>
-            <file>file:/D:/Програмиране_Никола/Farm/src/bg/smg/farm/model/Animal.java</file>
-            <file>file:/D:/Програмиране_Никола/Farm/src/bg/smg/farm/frames/AnimalPrevieww.java</file>
+            <file>file://dc02/Students_Redirect/smgCCFE/Documents/Nikola%2010d_Program_Java/Proekti/Farm/Farm/src/bg/smg/farm/frames/AnimalPrevieww.java</file>
+            <file>file://dc02/Students_Redirect/smgCCFE/Documents/Nikola%2010d_Program_Java/Proekti/Farm/Farm/src/bg/smg/farm/services/ImageUpload.java</file>
+            <file>file://dc02/Students_Redirect/smgCCFE/Documents/Nikola%2010d_Program_Java/Proekti/Farm/Farm/src/bg/smg/farm/frames/MainFrame.java</file>
+            <file>file://dc02/Students_Redirect/smgCCFE/Documents/Nikola%2010d_Program_Java/Proekti/Farm/Farm/src/bg/smg/farm/frames/NewAnimal.java</file>
+            <file>file://dc02/Students_Redirect/smgCCFE/Documents/Nikola%2010d_Program_Java/Proekti/Farm/Farm/src/bg/smg/farm/sql/insert_script.sql</file>
         </group>
     </open-files>
 </project-private>
