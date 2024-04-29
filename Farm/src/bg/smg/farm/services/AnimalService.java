@@ -14,14 +14,18 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import bg.smg.farm.model.Animal;
+import java.util.ArrayList;
+import java.sql.Date;
 /**
  *
  * @author smgCCFE
  */
 public class AnimalService implements AnimalServiceI{
-    private DataSource dataSource;
+    private final DataSource dataSource;
     private Connection connection;
+    private ArrayList<AnimalPrevieww> listOfObjects = new ArrayList<>();
 
+    
     public AnimalService() throws SQLException {
         dataSource = DBManager.getInstance().getDataSource();
     }
@@ -33,6 +37,7 @@ public class AnimalService implements AnimalServiceI{
     
     @Override
     public Animal getAllAnimals() throws SQLException {
+        
         try {
             
             this.connection = dataSource.getConnection();
@@ -45,6 +50,7 @@ public class AnimalService implements AnimalServiceI{
                 animal.setWeight(resultSet.getInt("weight"));
                 animal.setPictureName(resultSet.getString("pictureName"));
                 AnimalPrevieww pr = new AnimalPrevieww(animal.getName(), animal.getWeight(), animal.getPictureName());
+                listOfObjects.add(pr);
                 pr.setVisible(true);
                 }
             }
@@ -58,5 +64,43 @@ public class AnimalService implements AnimalServiceI{
             }
         }
         return null;
+    }
+    
+    @Override
+     public Animal setAllAnimals(String name, String weight, String pictureName, String dateOfBirth) throws SQLException{
+         try {
+            
+            this.connection = dataSource.getConnection();
+            Animal animal = new Animal();
+            try (PreparedStatement statement = connection.prepareStatement(
+                    "INSERT INTO cow(name, weight, pictureName, dateOfbirth)" 
+                            + "VALUES('" + name + "','" 
+                                         + weight + "','" 
+                                         + pictureName + "','" 
+                                         + dateOfBirth + "')" )) {
+                statement.setString(1, name);
+                statement.setInt(2, Integer.parseInt(weight));
+                statement.setString(3, pictureName);
+                System.out.println(animal.getPictureName());
+                statement.setDate(4, Date.valueOf(dateOfBirth));
+                statement.executeQuery();
+               
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        } finally {
+            if (connection != null) {
+                System.out.println("Closing database connection...");
+                connection.close();
+                System.out.println("Connection valid: " + connection.isValid(5));
+            }
+        }
+         
+         
+        return null;
+     }
+    
+    public void closePreviews() {
+        listOfObjects.forEach((n) -> n.setVisible(false));
     }
 }

@@ -13,4 +13,5 @@ CREATE TABLE cow(
     name varchar(23),
     weight int,
     pictureName varchar(23)
+    dateOfBirth date
 );

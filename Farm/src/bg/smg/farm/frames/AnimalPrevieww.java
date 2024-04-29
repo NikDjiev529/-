@@ -12,7 +12,6 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
-import bg.smg.farm.model.Animal;
 
 public class AnimalPrevieww extends javax.swing.JFrame {
 
@@ -26,7 +25,6 @@ public class AnimalPrevieww extends javax.swing.JFrame {
         initComponents();
         assignPictureToLabel1(pictureName);
         assignText(name, weight);
-        
     }
 
 
@@ -98,7 +96,7 @@ public class AnimalPrevieww extends javax.swing.JFrame {
     private void assignPictureToLabel1(String pictureName){
         System.out.println(pictureName);
          try {
-            BufferedImage img = ImageIO.read(new File(pictureName));
+            BufferedImage img = ImageIO.read(new File("src\\bg\\smg\\farm\\resources\\" + pictureName));
             Image dimg = img.getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(),
             Image.SCALE_SMOOTH);
             ImageIcon icon = new ImageIcon(dimg);

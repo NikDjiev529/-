@@ -5,13 +5,19 @@
  */
 package bg.smg.farm.model;
 
-import java.io.File;
-import java.util.logging.Logger;
-
 public class Animal {
     private String name;
     private int weight;
-    private String pictureName;
+    private static String pictureName;
+    private String dateOfBirth;
+
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
     
     public String getPictureName() {
         return pictureName;
